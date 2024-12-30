@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #70c5ce;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    height: 300px;
+    background-color: green;
+}
+
+.pipe-top {
+    top: 0;
+}
+
+.pipe-bottom {
+    bottom: 0;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    display: none;
+}
+
+
+
+/* ========================== */
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block;
+}
+.start-button.hidden {
+    display: none;
+}
